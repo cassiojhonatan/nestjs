@@ -1,0 +1,9 @@
+POST http://localhost:3000/tweets
+Content-Type: application/json
+
+{
+    "Text": "Vamo que vamo delhe que delhe vaneira!!!",
+    "User": {
+        "Name": "Cassio Gamarra"
+    }
+}
