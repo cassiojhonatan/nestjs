@@ -7,3 +7,12 @@ Content-Type: application/json
         "Name": "Cassio Gamarra"
     }
 }
+###
+GET http://localhost:3000/mail-list
+### 
+POST http://localhost:3000/mail-list
+Content-Type: application/json
+
+{
+    "emails": ["cassio1515@hotmail.com", "cassiogamarra@outlook.com", "roziana@gmail.com"]
+}
