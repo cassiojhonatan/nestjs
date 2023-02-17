@@ -21,3 +21,13 @@ jobs:
           node-version: 16.3.0
       - name: Install Yarn
         run: npm install yarn -g
+      - name: Install dependencies
+        run: yarn install
+      - name: Generate build
+        run: yarn run build:hml
+       # Share artifact inside workflow
+      - name: Share artifact inside workflow
+        uses: actions/upload-artifact@v1
+        with:
+          name: react-github-actions-build
+          path: build  
